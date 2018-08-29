@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>HearthStone</title>
+  <link rel="stylesheet" type="text/css" href="css/screen.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="Intro">
+    <a id="Header" target="_blank" href="https://playhearthstone.com/en-us/expansions-adventures/">
+        <img class="Icon2" src="./images/cards2.png" alt="Hearthstone">
+    </a>
+    <div class=Box>
+      <div class="Box-Header">
+        <a href="index.html" class="tabPages">Search</a>
+        <a href="cardDetails.html" class="tabPages current">Cards</a>
+        <a href="support.html" class="tabPages">Support</a>
+      </div>
+      <div class="Box-Content">
+        <form class="ListCollection">
+          <ul>
+            <li>
+              <span class="Category">Rarities</span>
+            </li>
+            <li>
+              <div>
+                <input class="radio" name="qualities" type="radio" value="Free" id="free">
+                <label class="RadioLabel" for="free">Free</label>
+              </div>
+            </li>
+            <li>
+              <input class="radio" name="qualities" type="radio" value="Common" id="common">
+              <label class="RadioLabel" for="common">Common</label>
+              <li>
+                <input class="radio" name="qualities" type="radio" value="Rare" id="rare">
+                <label class="RadioLabel" for="rare">Rare</label>
+              </li>
+              <li>
+                <input class="radio" name="qualities" type="radio" value="Epic" id="epic">
+                <label class="RadioLabel" for="epic">Epic</label>
+              </li>
+              <li>
+                <input class="radio" name="qualities" type="radio" value="Legendary" id="legendary">
+                <label class="RadioLabel" for="legendary">Legendary</label>
+              </li>
+          </ul>
+
+        </form>
+      </div>
+    </div>
+
+    <h1 class="OutputHeader" id="CategoryHeader">Output</h1>
+    <div id="LoadingImageContainer">
+      <img src="./images/loader.gif" class="LoadingImage">
+    </div>
+    <div class="History" id="HistoryPage2">
+    </div>
+    <script src="script/app.js"></script>
+</body>
+
+</html>

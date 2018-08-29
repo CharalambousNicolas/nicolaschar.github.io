@@ -1,0 +1,480 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block
+}
+
+body {
+  line-height: 1
+}
+
+ol, ul {
+  list-style: none
+}
+
+blockquote, q {
+  quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+* {
+  box-sizing: border-box
+}
+
+* {
+  margin: 0;
+  padding: 0
+}
+
+body, html {
+  font-family: Roboto, serif;
+  font-size: 1rem;
+  background: url(../images/papyrus.jpg) 50% 0 repeat-y;
+  position: relative;
+  overflow: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: 0 0
+}
+
+#Intro {
+  height: 100vh
+}
+
+#card {
+  display: block;
+  margin: 0 auto
+}
+
+.Center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: Center
+}
+
+.Icon {
+  display: block;
+  width: 100%;
+  background-repeat: repeat
+}
+
+.Icon2 {
+  display: block;
+  width: 100%;
+  background-repeat: repeat
+}
+
+.Icon3 {
+  display: block;
+  width: 100%;
+  background-repeat: repeat
+}
+
+#Anchor {
+  text-align: center
+}
+
+.Box {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.Box-Header {
+  background-color: #553f31;
+}
+
+.Box-Header a:hover {
+  border-bottom: 5px solid #fcd144;
+}
+
+.Box-Content {
+  padding: 10px;
+  background-color: #f4e5c6;
+  max-height: 550px;
+  min-height: 150px;
+  overflow: scroll;
+  border: 1px solid #bfa880;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px
+}
+
+.Box-Content .Box-Header {
+  display: block
+}
+
+.slider {
+  min-width: 80px
+}
+
+.tabPages {
+  text-decoration: none;
+  color: #fcd144;
+  font-size: 20px;
+  display: block;
+  padding: 20px
+}
+
+@media screen and (min-width: 400px) {
+  .Box-Header {
+    display: flex
+  }
+}
+
+.input {
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  border: 3px solid #fcd144;
+  display: flex
+}
+
+.input__text {
+  width: 100%;
+  font-family: Roboto;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: none;
+  background: 0 0;
+  text-align: left;
+  padding-left: 10px
+}
+
+.input__text::-webkit-input-placeholder {
+  color: #bfa880
+}
+
+#SubmitButton2 {
+  position: relative;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: 0;
+  color: #ffffff;
+  background-color: #b821c3;
+  ;
+  padding: 1px 5px
+}
+
+#SubmitButton {
+  position: relative;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: 0;
+  color: #553f31;
+  background-color: #fcd144;
+  padding: 1px 5px;
+}
+
+.Invalid::-webkit-input-placeholder {
+  color: #8c1c13
+}
+
+.goldCardSlider {
+  margin-left: 10px;
+  display: flex;
+  align-content: center
+}
+
+.goldCards {
+  line-height: 1.5em
+}
+
+.slider {
+  margin-left: 30px;
+  width: 80px;
+  height: 26px;
+  background: #bfa880;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .5), 0 1px 0 rgba(255, 255, 255, .2)
+}
+
+.slider:after {
+  content: 'OFF';
+  color: #000;
+  position: absolute;
+  right: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, .15)
+}
+
+.slider:before {
+  content: 'ON';
+  color: gold;
+  position: absolute;
+  left: 10px;
+  z-index: 0;
+  font: 12px/26px Arial, sans-serif;
+  font-weight: 700
+}
+
+.slider label {
+  display: block;
+  width: 34px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  background: #fcfff4;
+  background: linear-gradient(top, #fcfff4 0, #dfe5d7 40%, #b3bead 100%);
+  border-radius: 50px;
+  transition: all .4s ease;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3)
+}
+
+.slider input[type=checkbox] {
+  visibility: hidden
+}
+
+.slider input[type=checkbox]:checked+label {
+  left: 43px
+}
+
+input[type=submit] {
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+  background: #f1c40f;
+  border: 0;
+  border-bottom: 2px solid #e2b607;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #e2b607;
+  box-shadow: inset 0 -2px #e2b607
+}
+
+input[type=submit]:active {
+  top: 1px;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none
+}
+
+table {
+  margin: auto;
+  width: 80%
+}
+
+.FormLabel {
+  font-size: 1.1rem
+}
+
+.FormInput {
+  width: 100%;
+  font-family: Roboto;
+  display: inline-block;
+  font-size: 1rem;
+  border: .5px solid #f0cf65;
+  background: 0 0;
+  text-align: left;
+  line-height: 3vh;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 2px
+}
+
+.ListCollection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.Category {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  width: 100%
+}
+
+.radio {
+  font-size: .8rem;
+  margin-left: 5px
+}
+
+ul {
+  margin-bottom: 10px
+}
+
+.RadioLabel {
+  width: 200px;
+  border-radius: 3px;
+  border: 1px solid #bfa880;
+  font-size: .9rem
+}
+
+input.radio:empty {
+  margin-left: -999px
+}
+
+input.radio:empty~label {
+  position: relative;
+  float: left;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: .5em;
+  cursor: pointer
+}
+
+.radio {
+  display: none
+}
+
+input.radio:empty~label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #bfa880;
+  border-radius: 3px 0 0 3px
+}
+
+input.radio:hover:not(:checked)~label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #fff
+}
+
+input.radio:hover:not(:checked)~label {
+  color: #888
+}
+
+input.radio:checked~label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #fff;
+  background-color: #fcd144
+}
+
+input.radio:checked~label {
+  color: #777;
+  border: 1px solid #fcd144
+}
+
+input.radio:focus~label:before {
+  box-shadow: 0 0 0 3px #999
+}
+
+.icon {
+  display: inline-block;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor
+}
+
+svg {
+  color: #8c1c13
+}
+
+.icon-search {
+  vertical-align: bottom;
+  width: 2em;
+  height: 2em
+}
+
+.icon-expand_less {
+  display: block;
+  width: 8em;
+  height: 8em;
+  margin: 0 auto
+}
+
+.icon-expand_more {
+  display: block;
+  width: 8em;
+  height: 8em;
+  margin: 0 auto
+}
+
+.History {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+  height: 800px;
+  margin: 0 auto;
+  background-color: #f4e5c6;
+  border: 1px solid #d4ba8c;
+  margin-bottom: 2.5rem
+}
+
+#HistoryPage2 {
+  overflow: auto;
+  overflow-x: hidden
+}
+
+.HistoryImages {
+  max-width: 300px;
+  width: 100%;
+  height: auto
+}
+
+.OutputHeader {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px
+}
+
+#card {
+  max-width: 300px;
+  width: 100%;
+  height: auto
+}
+
+#LoadingImageContainer {
+  position: absolute;
+  justify-content: center;
+  width: 70%;
+  height: 800px;
+  margin: 0 auto;
+  left: 15%;
+  background-color: #f4e5c6;
+  border: 1px solid #d4ba8c;
+  margin-bottom: 2.5rem;
+  visibility: hidden
+}
+
+.LoadingImage {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
+  display: block;
+  margin: 50px auto
+}
